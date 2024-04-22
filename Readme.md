@@ -17,7 +17,7 @@
 ## Installation
 
 1. Clone the repository: `https://github.com/saikrishnasangu/IRCTC_Design.git`
-2. Navigate to the project directory: `cd IRCTC_Design_problem`
+2. Navigate to the project directory: `cd IRCTC_Design`
 3. Install dependencies: `npm install`
 4. Create a `.env` file and set the following environment variables:
    - `HOST`: MySQL database host
@@ -26,8 +26,10 @@
    - `NAME`: MySQL database name
    - `JWT_SECRET`: Secret key for JWT token generation
    - `ADMIN_KEY`: Admin key for protected routes
-5. Create the MySQL database and tables by running the SQL scripts in the `database` directory.
-6. Start the server: `npm start`
+5. Run (generatekeys.js) by using command `node generatekeys`
+6. Then copy and paste generated `JWT_SECRET & ADMIN_KEY` in .env 
+7. Create the MySQL database and tables by running the SQL scripts (schema.sql) in the `database` directory.
+8. Start the server: `npm start`
 
 ## API Documentation
 
